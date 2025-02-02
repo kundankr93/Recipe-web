@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bread Menu</title>
+    <link rel="stylesheet" href="styles.css">  
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: rgba(100, 9, 100, 0.771);
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: beige;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .leftbox {
+            text-align: left;
+        }
+
+        .rightbox img {
+            width: 120px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .rightbox img {
+                width: 100px;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bread Dishes</h1>
+        <div class="menu">
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Aloo Gobhi Paratha</h2>
+                    <h3>Price: ₹36 (3 pieces)</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="aloo gobhi paratha.jpeg" alt="Aloo Gobhi Paratha">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Aloo Paratha</h2>
+                    <h3>Price: ₹36 (3 pieces)</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="aloo paratha.jpeg" alt="Aloo Paratha">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Naan</h2>
+                    <h3>Price: ₹45 (3 pieces)</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="naan.jpeg" alt="Naan">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Normal Roti</h2>
+                    <h3>Price: ₹35 (5 pieces)</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="normal roti.png" alt="Normal Roti">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Paneer Naan</h2>
+                    <h3>Price: ₹60 (3 pieces)</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="paneer nan.jpeg" alt="Paneer Naan">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Puri</h2>
+                    <h3>Price: ₹48 (6 pieces)</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="puri.jpeg" alt="Puri">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Roghni Naan</h2>
+                    <h3>Price: ₹75 (3 pieces)</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="roghni naan.jpeg" alt="Roghni Naan">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Roomali Roti</h2>
+                    <h3>Price: ₹36 (3 pieces)</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="roomali roti.webp" alt="Roomali Roti">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Tandoori Roti</h2>
+                    <h3>Price: ₹60 (3 pieces)</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="tandoori roti.jpeg" alt="Tandoori Roti">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Menu</title>
+    <link rel="stylesheet" href="styles.css">  
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: crimson;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+           
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            background-color: beige;
+        }
+
+        .leftbox {
+            text-align: left;
+        }
+
+        .rightbox img {
+            width: 120px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .rightbox img {
+                width: 100px;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chicken Dishes</h1>
+        <div class="menu">
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Chicken Biryani</h2>
+                    <h3>Price: ₹270</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="chicken-biryani.png" alt="Chicken Biryani">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Chicken Butter Masala</h2>
+                    <h3>Price: ₹300</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="OIP.jpeg" alt="Chicken Butter Masala">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Chicken 65</h2>
+                    <h3>Price: ₹260</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="chicken-65.jpeg" alt="Chicken 65">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Chicken Curry</h2>
+                    <h3>Price: ₹180</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="chicken-curry.jpeg" alt="Chicken Curry">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Chicken Lollipop</h2>
+                    <h3>Price: ₹280</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="chicken-lollipop.png" alt="Chicken Lollipop">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Chicken Soup</h2>
+                    <h3>Price: ₹230</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="chicken-soup.png" alt="Chicken Soup">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Chicken Tikka</h2>
+                    <h3>Price: ₹250</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="chicken-tikka.jpeg" alt="Chicken Tikka">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

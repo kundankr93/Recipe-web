@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Menu</title>
+    <link rel="stylesheet" href="styles.css">  
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: darkslategrey;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: beige;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .leftbox {
+            text-align: left;
+        }
+
+        .rightbox img {
+            width: 120px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .rightbox img {
+                width: 100px;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Coffee/Tea</h1>
+        <div class="menu">
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Black Coffee</h2>
+                    <h3>Price: ₹150</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="black-coffee.png" alt="Black Coffee">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Cappuccino</h2>
+                    <h3>Price: ₹199</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="cappuccino.jpeg" alt="Cappuccino">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Cold Brew</h2>
+                    <h3>Price: ₹100</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="cold-brew.webp" alt="Cold Brew">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Americano</h2>
+                    <h3>Price: ₹149</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="americano.jpeg" alt="Americano">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Macchiato</h2>
+                    <h3>Price: ₹120</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="macchiato.jpeg" alt="Macchiato">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Affogato</h2>
+                    <h3>Price: ₹145</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="affogato.jpeg" alt="Affogato">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Iced Latte</h2>
+                    <h3>Price: ₹139</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="iced-latto.webp" alt="Iced Latte">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Green Tea</h2>
+                    <h3>Price: ₹30</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="green-tea.jpeg" alt="Green Tea">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Lemon Tea</h2>
+                    <h3>Price: ₹30</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="lemon tea.jpeg" alt="Lemon Tea">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Normal Tea</h2>
+                    <h3>Price: ₹20</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="normal-tea.jpeg" alt="Normal Tea">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

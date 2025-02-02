@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 20px;
+            
+            
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: url('res-bg.jpg') no-repeat center center/cover;
+        }
+
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            background-color: beige;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .nav a {
+            text-decoration: none;
+        }
+
+        .nav button {
+            background-color: darkslategrey;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+            margin: 0 15px;
+        }
+
+        .nav button:hover {
+            background-color: black;
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <a href="9-starter.html"><button>Starter</button></a>
+            <a href="7-coffee.html"><button>Coffee/Tea</button></a>
+            <a href="5-pizza.html"><button>Pizza</button></a>
+            <a href="3-paneer.html"><button>Paneer-Dishes</button></a>
+            <a href="4-chicken.html"><button>Chicken-Dishes</button></a>
+            <a href="6-bread.html"><button>Bread</button></a>
+            <a href="8-dal-veg.html"><button>Dal/Vegetables</button></a>
+        </nav>
+    </div>
+</body>
+</html>

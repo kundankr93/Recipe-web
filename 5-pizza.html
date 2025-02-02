@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Menu</title>
+    <link rel="stylesheet" href="styles.css">  
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: darkblue;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            background-color: beige;
+        }
+
+        .leftbox {
+            text-align: left;
+        }
+
+        .rightbox img {
+            width: 120px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .rightbox img {
+                width: 100px;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pizza Dishes</h1>
+        <section>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>california pizza</h2>
+                    <h3>Price: ₹270</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="California Pizza.jpeg" alt="Paneer Masala">
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="leftbox">
+                    <h2>keema pizza</h2>
+                    <h3>Price: ₹300</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="keema pizza.jpeg" alt="Paneer Butter Masala">
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Onion pizza</h2>
+                    <h3>Price: ₹260</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="onion pizza.png" alt="Paneer 65">
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="leftbox">
+                    <h2>paneer tikka pizza</h2>
+                    <h3>Price: ₹180</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="paneer tikka pizza.jpeg" alt="Paneer Bhurji">
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Sicilian pizza</h2>
+                    <h3>Price: ₹280</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="Sicilian Pizza.jpeg" alt="Paneer Biryani">
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Tandoori Chicken Pizza</h2>
+                    <h3>Price: ₹230</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="tandoori chicken pizza.jpeg" alt="Paneer Curry">
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Uddapam pizza</h2>
+                    <h3>Price: ₹250</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="uddapam pizza.webp" alt="Paneer Lababdaar">
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
