@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dal-Veg Menu</title>
+    <link rel="stylesheet" href="styles.css">  
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: darkslategrey;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: beige;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .leftbox {
+            text-align: left;
+        }
+
+        .rightbox img {
+            width: 120px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .rightbox img {
+                width: 100px;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dal-Veg Menu</h1>
+        <div class="menu">
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Aloo-Gobhi</h2>
+                    <h3>Price: ₹90</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="aloo-gobhi.png" alt="Aloo Gobhi">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Aloo-Matar</h2>
+                    <h3>Price: ₹90</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="aloo-matar.webp" alt="Aloo Matar">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Aloo-Palak</h2>
+                    <h3>Price: ₹100</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="aloo-palak.jpeg" alt="Aloo Palak">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Channa Dal Tadka</h2>
+                    <h3>Price: ₹100</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="chana-dal-tadka.png" alt="Channa Dal Tadka">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Channa Chhole</h2>
+                    <h3>Price: ₹120</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="channa-chhole.jpeg" alt="Channa Chhole">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Dal Makhani</h2>
+                    <h3>Price: ₹120</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="dal-makhani.jpeg" alt="Dal Makhani">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Dal Tadka</h2>
+                    <h3>Price: ₹120</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="dal-tadka.webp" alt="Dal Tadka">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Masoor Dal</h2>
+                    <h3>Price: ₹50</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="massor dal.jpeg" alt="Masoor Dal">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Mix Veg</h2>
+                    <h3>Price: ₹70</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="mix veg.jpeg" alt="Mix Veg">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Moong Dal</h2>
+                    <h3>Price: ₹50</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="moong-dal.png" alt="Moong Dal">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Rajma</h2>
+                    <h3>Price: ₹80</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="rajma.jpeg" alt="Rajma">
+                </div>
+            </div>
+            <div class="item">
+                <div class="leftbox">
+                    <h2>Toor Dal</h2>
+                    <h3>Price: ₹80</h3>
+                </div>
+                <div class="rightbox">
+                    <img src="toor-dal.jpeg" alt="Toor Dal">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
