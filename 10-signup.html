@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign-Up</title>
+  <style>
+    /* Global box-sizing for easier layout control */
+    * {
+      box-sizing: border-box;
+    }
+    
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      height: 100%;
+    }
+    
+    /* Container centers the form and adapts to screen size */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: rgb(143, 138, 138);
+      padding: 1rem;
+    }
+    
+    /* Responsive form styling */
+    .form {
+      background-color: azure;
+      border: 2px solid rgb(99, 92, 92);
+      padding: 2rem;
+      width: 100%;
+      max-width: 400px;
+    }
+    
+    .form p {
+      margin-bottom: 1rem;
+    }
+    
+    .form label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    
+    .form input[type="text"],
+    .form input[type="number"],
+    .form input[type="password"] {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .form input[type="submit"] {
+      padding: 0.5rem 1rem;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+    }
+    
+    .form input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    
+    /* Optional: further adjustments for very small screens */
+    @media (max-width: 480px) {
+      .form {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form class="form">
+      <p>
+        <label for="fname">First name</label>
+        <input type="text" id="fname" name="fname" />
+      </p>
+      <p>
+        <label for="lname">Last name</label>
+        <input type="text" id="lname" name="lname" />
+      </p>
+      <p>
+        <label for="mobile">Mobile</label>
+        <input type="number" id="mobile" name="mobile" />
+      </p>
+      <p>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" />
+      </p>
+      <p>
+        <label for="password">Password</label>
+        <!-- Changed input type to "password" for better security -->
+        <input type="password" id="password" name="password" />
+      </p>
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+</body>
+</html>
